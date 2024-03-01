@@ -1,6 +1,5 @@
 --- 
 - hosts: all
   tasks: 
-     - user:
-           name: rohan
-           state: present
+     - debug:
+          msg: "Hello World!!"
