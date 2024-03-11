@@ -3,5 +3,5 @@
 - hosts: all
   tasks:
      - name: launching job template from playbook
-       job_launch:
+       awx.awx.job_launch:
                job_template: "Demo Job Template"
