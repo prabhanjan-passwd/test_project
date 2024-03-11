@@ -1,0 +1,7 @@
+# running job template from playbook
+--- 
+- hosts: all
+  tasks:
+     - name: launching job template from playbook
+       job_launch:
+               job_template: "Demo Job Template"
