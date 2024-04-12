@@ -1,0 +1,7 @@
+---
+- name: Display Name Using Ansible Debug Module
+  hosts: all
+  tasks:
+    - name: Display Message
+      debug:
+        msg: "Password is {{ mypasswd }}"
