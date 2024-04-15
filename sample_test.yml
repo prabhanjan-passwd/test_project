@@ -1,0 +1,8 @@
+- name: My sample playbook execution
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - name: Adding provided host
+      ansible.builtin.add_host:
+        name: "{{ dynamic_host }}"
