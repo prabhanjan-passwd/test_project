@@ -7,11 +7,3 @@
       ansible.builtin.add_host:
         name: "{{ dynamic_host }}"
 
-- name: Print hostname
-  hosts: "all:!localhost"
-  gather_facts: true
-
-  tasks:
-    - name: Print hostname
-      ansible.builtin.debug:
-        msg: "{{ ansible_hostname }}"
