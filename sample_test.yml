@@ -1,4 +1,4 @@
-- name: My sample playbook execution
+- name: Playbook to configure ansible connection to dynamic hosts
   hosts: localhost
   gather_facts: false
 
@@ -6,3 +6,12 @@
     - name: Adding provided host
       ansible.builtin.add_host:
         name: "{{ dynamic_host }}"
+
+- name: Print hostname
+  hosts: "all:!localhost"
+  gather_facts: true
+
+  tasks:
+    - name: Print hostname
+      ansible.builtin.debug:
+        msg: "{{ ansible_hostname }}"
