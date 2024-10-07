@@ -1,0 +1,45 @@
+---
+- name: Playbook with 10 Hello World tasks
+  hosts: all
+  gather_facts: false
+
+  tasks:
+    - name: Task 1 - Display Hello World
+      debug:
+        msg: "Hello, World! This is task 1"
+
+    - name: Task 2 - Display Hello World
+      debug:
+        msg: "Hello, World! This is task 2"
+
+    - name: Task 3 - Display Hello World
+      debug:
+        msg: "Hello, World! This is task 3"
+
+    - name: Task 4 - Display Hello World
+      debug:
+        msg: "Hello, World! This is task 4"
+
+    - name: Task 5 - Display Hello World
+      debug:
+        msg: "Hello, World! This is task 5"
+
+    - name: Task 6 - Display Hello World
+      debug:
+        msg: "Hello, World! This is task 6"
+
+    - name: Task 7 - Display Hello World
+      debug:
+        msg: "Hello, World! This is task 7"
+
+    - name: Task 8 - Display Hello World
+      debug:
+        msg: "Hello, World! This is task 8"
+
+    - name: Task 9 - Display Hello World
+      debug:
+        msg: "Hello, World! This is task 9"
+
+    - name: Task 10 - Display Hello World
+      debug:
+        msg: "Hello, World! This is task 10"
